@@ -1,71 +1,109 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Attendance Management</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Content/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teacher SignUp</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+  <link rel="stylesheet" href="./styles/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./styles/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
 
-    <!-- Custom styles for this template -->
-    <link href="Content/full-slider.css" rel="stylesheet">
+   <!--Custom CSS-->
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/index_styles.css">
 
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Attendance Management System</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
-          </li>
 
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!--Navigation Bar-->
 
-  <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">Attendance Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="carousel-inner" role="listbox">
-        <!-- Background Image -->
-        <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+    <div class="collapse navbar-collapse float-right" id="navbarColor01">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./views/teacher_signup.html">Sign Up</a>
+        </li>
 
-          </div>
+      </ul>
+  </div>
+</nav>
+<!--End Of Navigation Bar-->
+<!--Container Part-->
+<div class="container-fluid index-container">
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="index_container">
+              <h1 class="display-3">Landing Page!</h1>
+              <p class="lead">
+                <a class="btn btn-primary btn-lg" href="./views/teachers_portal.html" role="button"> Get Into Teachers Portal </a>
+              </p>
+            </div>
         </div>
+
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-3">
+          <form>
+            <fieldset>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">
+                  <h4 class="text-muted">Login</h4>
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+
+            <div class="col-sm-2"></div>
+        </form>
+
+      </div>
+
     </div>
+  </div>
+<!--End Of Container-->
 
-    
-  </header>
+<!--Footer Part-->
+    <footer class="py-2 bg-primary fixed-bottom text-center">
+      <div class="container">
+        <p class="lead text-white">Copyright &copy; AIKYA SDE 2018</p>
+      </div>
+    </footer>
+<!--End Of Footer-->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; AIKYA SDE 2018</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-  <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery -->
+<script src="./scripts/vendor_scripts/jquery-3.3.1.js"></script>
 
-    <script src="Scripts/main.js"></script>
+<!-- Custom Scripts-->
+<script src="./scripts/script.js"></script>
+<script src="./scripts/index_script.js"></script>
+
 </body>
 </html>

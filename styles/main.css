@@ -1,0 +1,15 @@
+/*
+ Styles specific to global DOM elements like NavBar and Footer
+    i.e which remains same in every page
+*/
+
+
+
+.index-container {
+  padding-left: 2%;
+  position: relative;
+  top: 100px;
+  bottom: 80px;
+  z-index: 1;
+  padding-bottom: 80px;
+}
