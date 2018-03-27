@@ -20,7 +20,6 @@
   
   .filter-form {
     padding-left: 10%;
-    padding-top: 10%;
   }
   .flex-container {
     display: flex;
@@ -43,9 +42,5 @@
   }
 
   .portal-head {
-      margin-top: 10%;
-  }
-
-  .select-card {
-      margin: 2%;
+      margin-top: 5%;
   }

@@ -21,7 +21,7 @@
   <!--Navigation Bar-->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <a class="navbar-brand" href="#">Attendance Management System</a>
+    <a class="navbar-brand" href="./../index.html">Attendance Management System</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,46 +55,45 @@
             <form>
                 <fieldset>
                   <div class="form-group">
-                        <h4 class="text-muted"> Teacher Details</h4>
+                        <h4 class="text-muted">Teacher Details</h4>
                   </div>
 
 
                   <div class="form-group">
                         <label for="InputTeacherId">Id</label>
-                        <input class="form-control" id="InputTeacherId"  placeholder="Enter Teacher Id" type="text">
+                        <input class="form-control" id="InputTeacherId"  placeholder="Enter Teacher Id" type="text" required>
                       </div>
 
                  <div class="form-group">
                         <label for="InputTeacherName">Name</label>
-                        <input class="form-control" id="InputTeacherName"  placeholder="Enter Teacher Name" type="text">
-                      </div>
-
-                 <div class="form-group">
-                        <label for="InputTeacherAddress">Address</label>
-                        <input class="form-control" id="InputTeacherAddress"  placeholder="Enter Teacher Address" type="text">
+                        <input class="form-control" id="InputTeacherName"  placeholder="Enter Teacher Name" type="text" required>
                       </div>
 
                 <div class="form-group">
                         <label for="InputTeacherDepartment">Department</label>
-                        <input class="form-control" id="InputTeacherDepartment"  placeholder="Enter Teacher Department" type="text">
+                        <input class="form-control" id="InputTeacherDepartment"  placeholder="Enter Teacher Department" type="text" required>
                       </div>
 
                     <div class="form-group">
                         <label for="InputTeacherPhone">Phone</label>
-                        <input class="form-control" id="InputTeacherPhone"  placeholder="Enter Teacher Phone Number" type="text">
+                        <input class="form-control" id="InputTeacherPhone"  placeholder="Enter Teacher Phone Number" type="text" required>
                       </div>
 
                   <div class="form-group">
                     <label for="InputEmail">Email</label>
-                    <input class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email" type="email">
+                    <input class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email" type="email" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputPassword">Password</label>
-                    <input class="form-control" id="exampleInputPassword" placeholder="Password" type="password">
+                    <input class="form-control" id="exampleInputPassword" placeholder="Password" type="password" required>
                   </div>
-                  </fieldset>
+
+                  <div class="form-group">
+                    <label for="exampleInputPassword">Confirm Password</label>
+                    <input class="form-control" id="exampleInputPassword" placeholder="Password" type="password" required>
+                  </div>
 
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </fieldset>
