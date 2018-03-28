@@ -1,125 +1,166 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teacher SignUp</title>
 
-    <!-- Bootstrap -->
-  <link rel="stylesheet" href="./../styles/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="./../styles/bootstrap-4.0.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./../styles/bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+  <head>
 
-   <!--Custom CSS-->
-  <link rel="stylesheet" href="./../styles/main.css">
-  <link rel="stylesheet" href="./../styles/teachers_signup.css">
-</head>
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!--Navigation Bar-->
+    <title>Creative - Start Bootstrap Theme</title>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <a class="navbar-brand" href="./../index.html">Attendance Management System</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./../vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./../fonts/iconic/css/material-design-iconic-font.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./../vendor/animate/animate.css">
+  <!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="./../vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./../vendor/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./../vendor/select2/select2.min.css">
+  <!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="./../vendor/daterangepicker/daterangepicker.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./../css/util.css">
+    <link rel="stylesheet" type="text/css" href="./../css/main.css">
+  <!--===============================================================================================-->
 
-    <div class="collapse navbar-collapse float-right" id="navbarColor01">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./../index.html">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./../index.html">Sign In</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./teacher_signup.html">Sign Up</a>
-        </li>
+    <!-- Bootstrap core CSS -->
+    <link href="./../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      </ul>
-  </div>
-</nav>
-<!--End Of Navigation Bar-->
-<!--Container Part-->
-<div class="container-fluid index-container">
-        <div class="row"> </div>
+    <!-- Custom fonts for this template -->
+    <link href="./../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <div class="row">
-      <div class="col-sm-3" > </div>
-         <div class="col-sm-6">
+    <!-- Plugin CSS -->
+    <link href="./../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-            <form>
-                <fieldset>
-                  <div class="form-group">
-                        <h4 class="text-muted">Teacher Details</h4>
-                  </div>
+    <!-- Custom styles for this template -->
+    <link href="./../css/creative.min.css" rel="stylesheet">
 
+  </head>
 
-                  <div class="form-group">
-                        <label for="InputTeacherId">Id</label>
-                        <input class="form-control" id="InputTeacherId"  placeholder="Enter Teacher Id" type="text" required>
-                      </div>
+  <body id="page-top">
 
-                 <div class="form-group">
-                        <label for="InputTeacherName">Name</label>
-                        <input class="form-control" id="InputTeacherName"  placeholder="Enter Teacher Name" type="text" required>
-                      </div>
-
-                <div class="form-group">
-                        <label for="InputTeacherDepartment">Department</label>
-                        <input class="form-control" id="InputTeacherDepartment"  placeholder="Enter Teacher Department" type="text" required>
-                      </div>
-
-                    <div class="form-group">
-                        <label for="InputTeacherPhone">Phone</label>
-                        <input class="form-control" id="InputTeacherPhone"  placeholder="Enter Teacher Phone Number" type="text" required>
-                      </div>
-
-                  <div class="form-group">
-                    <label for="InputEmail">Email</label>
-                    <input class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email" type="email" required>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="exampleInputPassword">Password</label>
-                    <input class="form-control" id="exampleInputPassword" placeholder="Password" type="password" required>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="exampleInputPassword">Confirm Password</label>
-                    <input class="form-control" id="exampleInputPassword" placeholder="Password" type="password" required>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </fieldset>
-              </form>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="./../index.html">AIKYA SDE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+          
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./login.html">LogIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">SignUp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#admin">Admin</a>
+            </li>
+          </ul>
         </div>
-      <div class="col-sm-3" > </div>
+      </div>
+    </nav>
 
-    </div>
-  </div>
-  <div class="row"> </div>
-<!--End Of Container-->
-<!--Footer Part-->
-<footer class="py-2 bg-primary fixed-bottom text-center">
-    <div class="container">
-      <p class="lead text-white">Copyright &copy; AIKYA SDE 2018</p>
-    </div>
-  </footer>
-<!--End Of Footer-->
+    <header class="masthead text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-3 mx-auto">
+            <br />
+                      <form class="login100-form validate-form">
+              
+                        <span class="login100-form-title p-b-34 p-t-27">
+                          Sign Up
+                        </span>
+              
+                        <div class="wrap-input100 validate-input" data-validate = "Enter Name">
+                          <input class="input100" type="text" name="name" placeholder="Name">
+                          <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                        </div>
 
-<!--jQuery-->
-<script src="./../scripts/vendor_scripts/jquery-3.3.1.js"></script>
+                        <div class="wrap-input100 validate-input" data-validate = "Enter username">
+                          <input class="input100" type="text" name="username" placeholder="Username  / Tid ">
+                          <span class="focus-input100" data-placeholder="&#xf206;"></span>
+                        </div>
 
-<!-- Custom Scripts -->
-<script src="./../scripts/index_script.js"></script>
-<script src="./../scripts/teacher_signup.js"></script>
+                        
+                        <div class="wrap-input100 validate-input" data-validate = "Enter Department">
+                          <input class="input100" type="text" name="dept" placeholder="Enter Department Code ">
+                          <span class="focus-input100" data-placeholder="&#xf255;"></span>
+                        </div>
+              
+                        <div class="wrap-input100 validate-input" data-validate="Enter password">
+                          <input class="input100" type="password" name="pass" placeholder="Password">
+                          <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                        </div>
 
+                        <div class="wrap-input100 validate-input" data-validate="Confirm password">
+                          <input class="input100" type="password" name="pass" placeholder="Confirm Password">
+                          <span class="focus-input100" data-placeholder="&#xf190;"></span>
+                        </div>
+              
+                        <div class="contact100-form-checkbox">
+                          <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                          <label class="label-checkbox100" for="ckb1">
+                          <h5>  Remember me </h5>
+                          </label>
+                        </div>
+              
+                        <div class="container-login100-form-btn">
+                          <button class="login100-form-btn">
+                            Register
+                          </button>
+                        </div>
+            
+                      </form>
+          
+         </div>
+        </div>
+      </div>
+    </header>
 
-</body>
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./../vendor/jquery/jquery.min.js"></script>
+    <script src="./../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="./../vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="./../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="./../js/creative.min.js"></script>
+
+    <!--===============================================================================================-->
+	<script src="./../vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="./../vendor/animsition/js/animsition.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="./../vendor/bootstrap/js/popper.js"></script>
+    <script src="./../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="./../vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="./../vendor/daterangepicker/moment.min.js"></script>
+    <script src="./../vendor/daterangepicker/daterangepicker.js"></script>
+  <!--===============================================================================================-->
+    <script src="./../vendor/countdowntime/countdowntime.js"></script>
+  <!--===============================================================================================-->
+    <script src="./../js/main.js"></script>
+
+  </body>
+
 </html>
