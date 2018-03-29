@@ -2,155 +2,226 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edit Attendance</title>
 
-    <!-- Bootstrap Files -->
-    <link rel="stylesheet" href="./../styles/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./../styles/bootstrap-4.0.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../styles/bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="./../styles/main.css">
-    <link rel="stylesheet" href="./../styles/add_attendance.css">
+  <title>Edit Attendance</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="./../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="./../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="./../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="./../css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="./../css/teachers_portal.css" rel="stylesheet">
+  <link href="./../css/creative.min2.css" rel="stylesheet">
+
+  <!--Table requirements-->
+
+
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./../vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./../vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./../vendor/perfect-scrollbar/perfect-scrollbar.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./../util.css">
+  <link rel="stylesheet" type="text/css" href="./../table_main.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
-<body>
+<body id="page-top">
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#">Profile</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="./../index.html">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#">Add Attendance</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#">Edit Attendance</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Check Attendance</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">LogOut</a>
+      </li>
+    </ul>
+  </nav>
 
-    <!--Navigation Bar-->
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1" style=" padding-bottom:3%; color:white; font-family: 'Josefin Sans', sans-serif;">EDIT ATTENDANCE</h1>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">DEPT</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">SEM</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">SEC</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">DATE</a>
+        </li>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <a class="navbar-brand" href="./../index.html">Attendance Management System</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse float-right" id="navbarColor01">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./../index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./../index.html">Sign In</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./teacher_signup.html">Sign Up</a>
-                </li>
-
-            </ul>
+        <li class="breadcrumb-item active">Period</li>
+      </ol>
+      <div class="table100 ver2 m-b-40">
+        <div class="table100-head">
+          <table>
+            <thead>
+              <tr class="row100 head">
+                <th class="cell100 column1">USN</th>
+                <th class="cell100 column2"></th>
+                <th class="cell100 column3"></th>
+                <th class="cell100 column4">Present</th>
+                <th class="cell100 column5"></th>
+              </tr>
+            </thead>
+          </table>
         </div>
-    </nav>
-    <!--End Of Navigation Bar-->
 
-    <!--Attendance Table-->
-    <div class="container index-container">
+        <div class="table100-body js-pscroll">
+          <table>
+            <tbody>
+              <tr class="row100 body">
+                <td class="cell100 column1">1RN16CS027</td>
+                <td class="cell100 column2"></td>
+                <td class="cell100 column3"></td>
+                <td class="cell100 column4">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                    </label>
+                  </div>
+                </td>
+                <td class="cell100 column5"></td>
+              </tr>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Branch</li>
-                    <li class="breadcrumb-item">Sem</li>
-                    <li class="breadcrumb-item">Sec</li>
-                    <li class="breadcrumb-item">Date</li>
-                    <li class="breadcrumb-item active">Class</li>
-                </ol>
-            </div>
-        </div>
+              <tr class="row100 body">
+                <td class="cell100 column1">1RN16CS027</td>
+                <td class="cell100 column2"></td>
+                <td class="cell100 column3"></td>
+                <td class="cell100 column4">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                    </label>
+                  </div>
+                </td>
+                <td class="cell100 column5"></td>
+              </tr>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">USN</th>
-                            <th scope="col">Present</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1RN16CS001</th>
-                            <td>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
-                                    <label class="custom-control-label" for="customCheck1"></label>
-                                </div>
-            </div>
-            </td>
-            </tr>
-            <tr>
-                <th scope="row">1RN16CS002</th>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2" checked="">
-                        <label class="custom-control-label" for="customCheck2"></label>
-                    </div>
+              <tr class="row100 body">
+                <td class="cell100 column1">1RN16CS027</td>
+                <td class="cell100 column2"></td>
+                <td class="cell100 column3"></td>
+                <td class="cell100 column4">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                    </label>
+                  </div>
                 </td>
-            </tr>
-            <tr>
-                <th scope="row">1RN16CS003</th>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3" checked="">
-                        <label class="custom-control-label" for="customCheck3"></label>
-                    </div>
+                <td class="cell100 column5"></td>
+              </tr>
+
+              <tr class="row100 body">
+                <td class="cell100 column1">1RN16CS027</td>
+                <td class="cell100 column2"></td>
+                <td class="cell100 column3"></td>
+                <td class="cell100 column4">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                    </label>
+                  </div>
                 </td>
-            </tr>
-            <tr>
-                <th scope="row">1RN16CS004</th>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4" checked="">
-                        <label class="custom-control-label" for="customCheck4"></label>
-                    </div>
+                <td class="cell100 column5"></td>
+              </tr>
+
+              <tr class="row100 body">
+                <td class="cell100 column1">1RN16CS027</td>
+                <td class="cell100 column2"></td>
+                <td class="cell100 column3"></td>
+                <td class="cell100 column4">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                    </label>
+                  </div>
                 </td>
-            </tr>
-            <tr>
-                <th scope="row">1RN16CS005</th>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5" checked="">
-                        <label class="custom-control-label" for="customCheck5"></label>
-                    </div>
+                <td class="cell100 column5"></td>
+              </tr>
+
+              <tr class="row100 body">
+                <td class="cell100 column1">1RN16CS027</td>
+                <td class="cell100 column2"></td>
+                <td class="cell100 column3"></td>
+                <td class="cell100 column4">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                    </label>
+                  </div>
                 </td>
-            </tr>
-            <tr class="table-primary">
-                <th scope="row">1RN16CS006</th>
-                <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck6" checked="">
-                        <label class="custom-control-label" for="customCheck6"></label>
-                    </div>
-                </td>
-            </tr>
+                <td class="cell100 column5"></td>
+              </tr>
+
+
             </tbody>
-            </table>
-            <button type="submit" class="btn btn-primary">Submit</button>
+          </table>
         </div>
+      </div>
+
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services" style="margin:4% auto">Edit Attendance</a>
+
     </div>
-    </div>
-    <!--End of Attendance Table-->
-
-    <!--Footer Part-->
-    <footer class="py-2 bg-primary fixed-bottom text-center">
-        <div class="container">
-            <p class="lead text-white">Copyright &copy; AIKYA SDE 2018</p>
-        </div>
-    </footer>
-    <!--End Of Footer-->
+    <div class="overlay"></div>
+  </header>
 
 
 
-    <!-- jQuery -->
-    <script src="./../scripts/vendor_scripts/jquery-3.3.1.js"></script>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
 
-    <!-- Custom Scripts-->
-    <script src="./../scripts/script.js"></script>
-    <script src="./../scripts/edit_attendance.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="./../vendor/jquery/jquery.min.js"></script>
+  <script src="./../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="./../js/stylish-portfolio.min.js"></script>
 
 </body>
 
