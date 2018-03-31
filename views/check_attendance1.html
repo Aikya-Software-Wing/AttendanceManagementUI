@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Edit Profile</title>
+    <title>Check Att.</title>
 
     <link rel="stylesheet" href="./../css/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./../css/bootstrap-4.0.0-dist/css/bootstrap.min.css">
@@ -50,7 +50,7 @@
 
     <!-- Custom CSS -->
     <link href="./../css/stylish-portfolio.min.css" rel="stylesheet">
-    <link href="./../css/edit_attendance.css" rel="stylesheet">
+    <link href="./../css/check_attendance1.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
     <link href="./../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -80,83 +80,147 @@
         <i class="fa fa-bars"></i>
     </a>
     <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
+            <ul class="sidebar-nav">
+              <li class="sidebar-brand">
                 <a class="js-scroll-trigger" href="./teachers_portal2.html">Teacher Name</a>
-            </li>
-            <li class="sidebar-nav-item">
+              </li>
+              
+              <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="./../index.html">Home</a>
-            </li>
-            <li class="sidebar-nav-item">
+              </li>
+              <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="./manage_attendance.html">Manage Attendance</a>
-            </li>
-            <li class="sidebar-nav-item">
+              </li>
+              <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="./check_attendance1.html">Check Attendance</a>
-            </li>
-            <li class="sidebar-nav-item">
+              </li>
+              <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="./edit_profile.html">Edit Profile</a>
-            </li>
-            <li class="sidebar-nav-item">
+              </li>
+              <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="./../index.html">LogOut</a>
-            </li>
-        </ul>
-    </nav>
+              </li>
+            </ul>
+          </nav>
 
     <!-- Header -->
 
 
-    <header class="text-white d-flex">
-        <div class="container my-auto">
+    <header class="d-flex">
+        <div class="container text-center my-auto">
+            <br>
+            <br>
+            <br>
             <div class="row">
-                <div class="col-lg-3 mx-auto">
-                    <br />
-                    <form class="login100-form validate-form">
+                <div class="col-lg-12 mx-auto">
+                        <h1 class="text-uppercase">
+                                <strong style="color: white">check attendance</strong>
+                              </h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mx-auto text-center">
+                    <fieldset>
 
-                        <span class="login100-form-title p-b-34 p-t-27">
-                            Edit Profile
-                        </span>
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option selected="">BRANCH</option>
+                                <option value="1">CSE</option>
+                                <option value="2">ISE</option>
+                                <option value="3">ECE</option>
+                                <option value="4">ME</option>
+                                <option value="5">CE</option>
+                                <option value="6">EIE</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mx-auto text-center">
+                    <fieldset>
 
-                        <div class="wrap-input100 validate-input" data-validate="Enter Name">
-                            <input class="input100" type="text" name="name" placeholder="Name">
-                            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option selected="">SEM</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mx-auto text-center">
+                    <fieldset>
+
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option selected="">SECTION</option>
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">C</option>
+                            </select>
                         </div>
 
-                        <div class="wrap-input100 validate-input" data-validate="Enter username">
-                            <input class="input100" type="text" name="username" placeholder="Username  / Tid ">
-                            <span class="focus-input100" data-placeholder="&#xf206;"></span>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mx-auto text-center">
+                    <fieldset>
+
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option selected="" id="datepicker">DATE</option>
+                            </select>
                         </div>
 
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mx-auto text-center">
+                    <fieldset>
 
-                        <div class="wrap-input100 validate-input" data-validate="Enter Department">
-                            <input class="input100" type="text" name="dept" placeholder="Department Code ">
-                            <span class="focus-input100" data-placeholder="&#xf255;"></span>
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option selected="">SLOT</option>
+                                <option value="1">S1</option>
+                                <option value="2">S2</option>
+                                <option value="3">S3</option>
+                                <option value="4">S4</option>
+                                <option value="5">S5</option>
+                                <option value="6">S6</option>
+                                <option value="7">S7</option>
+                            </select>
                         </div>
-
-                        <div class="wrap-input100 validate-input" data-validate="Enter old password">
-                                <input class="input100" type="password" name="pass" placeholder="Old Password">
-                                <span class="focus-input100" data-placeholder="&#xf191;"></span>
-                            </div>
-
-                        <div class="wrap-input100 validate-input" data-validate="Enter new password">
-                            <input class="input100" type="password" name="pass" placeholder="New Password">
-                            <span class="focus-input100" data-placeholder="&#xf190;"></span>
-                        </div>
-
-                        <div class="wrap-input100 validate-input" data-validate="Confirm  new password">
-                            <input class="input100" type="password" name="pass" placeholder="Confirm New Password">
-                            <span class="focus-input100" data-placeholder="&#xf190;"></span>
-                        </div>
-
-
-                        <div class="container-login100-form-btn"  style="padding-bottom: 10%">
-                            <a href="#"><button class="login100-form-btn">
-                                Save
-                            </button></a>
-                        </div>
-
-                    </form>
+                    </fieldset>
+                </div>
+            </div>
+            <br>
+            <div class="row" style="padding-bottom: 5%">
+                <div class="col-lg-4">
 
                 </div>
+                <div class="col-lg-4 text-center" style="padding-bottom: 5%">
+
+                    <div class="container-login100-form-btn">
+                        <a href="./check_attendance2.html"><button class="login100-form-btn">
+                            SUBMIT
+                        </button></a>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
     </header>
@@ -177,7 +241,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="./../js/stylish-portfolio.min.js"></script>
-    <script src="./../js/edit_attendance.js"></script>
+    <script src="./../js/manage_attendance.js"></script>
 
     <script src="./../js/creative.min.js"></script>
 
